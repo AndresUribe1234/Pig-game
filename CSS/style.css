@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-  --size-font-game: 2rem;
+  --width-boxes: 25%;
 }
 
 /* Global */
@@ -12,4 +12,90 @@
 
 html {
   font-size: 62.5%;
+}
+
+body {
+  background-color: gray;
+}
+
+/* main section */
+.game-container {
+  display: flex;
+  height: 70vh;
+  width: 100vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: pink;
+  font-size: 4rem;
+}
+
+.left-side {
+  background-color: blue;
+  opacity: 0.5;
+  height: inherit;
+  width: 50%;
+  position: relative;
+}
+
+.right-side {
+  background-color: yellow;
+  opacity: 0.5;
+  height: inherit;
+  width: 50%;
+  position: relative;
+}
+
+.turn-score-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  width: var(--width-boxes);
+}
+
+.final-score-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  width: var(--width-boxes);
+}
+
+.game-buttons-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  align-items: center;
+  justify-content: space-between;
+  height: 20vh;
+  width: var(--width-boxes);
+}
+
+.new-game {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.dice-outcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
