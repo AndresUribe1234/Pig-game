@@ -110,11 +110,18 @@ body {
   width: 15vw;
   height: 20vh;
   background-color: #e3e3e3;
-  background-image: url("https://cdn0.iconfinder.com/data/icons/phosphor-regular-vol-2/256/dice-one-128.png");
+  /* background-image: url("https://cdn0.iconfinder.com/data/icons/phosphor-regular-vol-2/256/dice-one-128.png"); */
+  /* background-image: url("/Pics/9025598_dice_four_icon.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: contain; */
   border-radius: 2rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 button {
@@ -129,6 +136,10 @@ button {
 }
 button:hover {
   background-color: grey;
+}
+
+.hidden {
+  display: none;
 }
 
 /* Palette */
