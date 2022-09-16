@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-  --width-boxes: 25%;
+  --width-boxes: 30%;
 }
 
 /* Global */
@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background-color: gray;
+  background-color: #233142;
 }
 
 /* main section */
@@ -27,21 +27,20 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: pink;
-  font-size: 4rem;
+  color: #233142;
 }
 
 .left-side {
-  background-color: blue;
-  opacity: 0.5;
+  background-color: #455d7a;
+  /* opacity: 0.5; */
   height: inherit;
   width: 50%;
   position: relative;
 }
 
 .right-side {
-  background-color: yellow;
-  opacity: 0.5;
+  background-color: #f95959;
+  /* opacity: 0.5; */
   height: inherit;
   width: 50%;
   position: relative;
@@ -58,6 +57,13 @@ body {
   justify-content: center;
   height: 20vh;
   width: var(--width-boxes);
+  background-color: #e3e3e3;
+  border-radius: 2rem;
+  font-size: 2rem;
+}
+
+.turn-score {
+  font-size: 4rem;
 }
 
 .final-score-container {
@@ -70,7 +76,11 @@ body {
   align-items: center;
   justify-content: center;
   height: 20vh;
-  width: var(--width-boxes);
+  font-size: 5rem;
+}
+
+.player-tag {
+  margin-bottom: 1rem;
 }
 
 .game-buttons-container {
@@ -83,7 +93,6 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 20vh;
-  width: var(--width-boxes);
 }
 
 .new-game {
@@ -95,7 +104,46 @@ body {
 
 .dice-outcome {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 15vw;
+  height: 20vh;
+  background-color: #e3e3e3;
+  background-image: url("https://cdn0.iconfinder.com/data/icons/phosphor-regular-vol-2/256/dice-one-128.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 2rem;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  border-radius: 4rem;
+  padding: 2rem;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: grey;
+}
+
+/* Palette */
+.first-color {
+  background: #233142;
+}
+
+.second-color {
+  background: #455d7a;
+}
+
+.third-color {
+  background: #f95959;
+}
+
+.fourth-color {
+  background: #e3e3e3;
 }
